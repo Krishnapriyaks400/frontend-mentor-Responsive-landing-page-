@@ -1,0 +1,138 @@
+@font-face {
+	font-family: inter-Font-bold;
+	src: url(assets/fonts/static/Inter-Bold.ttf);
+}
+
+@font-face {
+	font-family: inter-Font-reg;
+	src: url(assets/fonts/static/Inter-Regular.ttf);
+}
+
+@font-face {
+	font-family: inter-Font-semi;
+	src: url(assets/fonts/static/Inter-SemiBold.ttf);
+}
+
+body {
+    background: hsl(0, 0%, 8%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+.container {
+    width: 350px;
+    background: hsl(0, 0%, 12%);
+    border-radius: 10px;
+    margin: auto;
+    max-width: 400px;
+    padding: 40px;
+
+}
+
+img {
+	width: 79px;
+	border-radius: 50%;
+}
+
+p {
+	color:hsl(0, 0%, 100%);
+	text-align: center;
+}
+
+
+
+.address {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.img {
+	display: flex;
+	justify-content: center;
+
+}
+
+
+p.name {
+    font-family: inter-Font-semi;
+    font-size: 24px;
+    margin: 0;
+}
+
+p.city {
+	margin: 10px 0 0 0;
+	font-family: inter-Font-bold;
+	font-size: 14px;
+	color: hsl(75, 94%, 57%);
+}
+
+p.desc {
+	margin: 30px 0 0 0;
+	font-family: inter-Font-reg;
+}
+
+ul.lists {
+    list-style: none;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 30px 0 0;
+    gap: 20px;
+}
+
+
+li.list {
+    background: hsl(0, 0%, 20%);
+    color: hsl(0, 0%, 100%);
+    width: 100%;
+    height: 28px;
+    border-radius: 4px;
+    text-align: center;
+    padding: 10px 0;
+    line-height: 27px;
+    font-family: inter-Font-semi;
+}
+
+li.list:hover {
+  cursor: pointer;
+  background: hsl(75, 94%, 57%);
+  color: hsl(0, 0%, 8%);
+  transition: 0.5s ease;
+}
+
+
+
+@media only screen and (max-width: 750px) {
+
+  .container {
+      margin: auto 20px;
+      padding: 26px;
+    }
+
+	li.list {
+		width: 271px;
+		font-size: 14px;
+	}
+
+	p.desc {
+		font-size: 12px;
+	}
+
+	p.name {
+		font-size: 18px;
+	}
+
+	p.city {
+		font-size: 14px;
+	}
+
+  .detilas {
+    margin: auto;
+    padding: 20px 0 0 0;
+    }
+}
